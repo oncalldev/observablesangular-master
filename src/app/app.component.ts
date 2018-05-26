@@ -54,8 +54,10 @@ export class AppComponent implements OnInit {
   }
 
   getSquares() {
-    this.apitest.getSquares().subscribe(function (data) {
-      console.log("Squares", data);
-    })
+    this.apitest.getSquares().subscribe(data => console.log("Square:", data));
+  }
+
+  getSquare(id:string) {
+
   }
 }

@@ -44,4 +44,7 @@ export class ApitestService {
     return this.httpClient.get<Squares>(this.squares);
   }
 
+  getSquare(id: string) : Observable<Squares> {
+    return this.httpClient.get<Squares>(this.squares);
+  }
 }
