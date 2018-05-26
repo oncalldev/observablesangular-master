@@ -6,6 +6,7 @@ import { Student } from './models/student';
 import { OrderBook } from './models/orderbook';
 import { Rates } from './models/rates';
 import { LatestPrices } from './models/latestprices';
+import { Squares } from './models/square';
 
 @Injectable()
 export class ApitestService {
@@ -15,6 +16,7 @@ export class ApitestService {
   orderBook: string = "http://localhost:5555/orderbook";
   rates: string = "http://localhost:5555/rates";
   latestprices: string = "http://localhost:5555/latestprices";
+  squares : string = "http://localhost:5555/squares";
 
   constructor(private httpClient: HttpClient) { }
 
@@ -38,5 +40,8 @@ export class ApitestService {
     return this.httpClient.get<LatestPrices>(this.latestprices);
   }
 
+  getSquares(): Observable<Squares> {
+    return this.httpClient.get<Squares>(this.squares);
+  }
 
 }

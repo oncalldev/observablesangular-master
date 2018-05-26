@@ -12,9 +12,11 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.getLanguages();
     this.getStudent();
+    this.getStudentFat();
     this.getOrderBook();
     this.getRates();
     this.getLatestPrices();
+    this.getSquares();
   }
 
   getLanguages() {
@@ -27,6 +29,10 @@ export class AppComponent implements OnInit {
     this.apitest.getStudent().subscribe(function (data) {
       console.log("Student", data);
     })
+  }
+
+  getStudentFat() {
+    this.apitest.getStudent().subscribe( data=> console.log("Student:", data));
   }
 
   getOrderBook() {
@@ -44,6 +50,12 @@ export class AppComponent implements OnInit {
   getLatestPrices() {
     this.apitest.getLatestPrices().subscribe(function (data) {
       console.log("Latest Prices", data);
+    })
+  }
+
+  getSquares() {
+    this.apitest.getSquares().subscribe(function (data) {
+      console.log("Squares", data);
     })
   }
 }
