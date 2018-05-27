@@ -10,13 +10,14 @@ export class AppComponent implements OnInit {
   constructor(private apitest: ApitestService) { }
 
   ngOnInit() {
-    this.getLanguages();
-    this.getStudent();
-    this.getStudentFat();
-    this.getOrderBook();
-    this.getRates();
-    this.getLatestPrices();
-    this.getSquares();
+    // this.getLanguages();
+    // this.getStudent();
+    // this.getStudentFat();
+    // this.getOrderBook();
+    // this.getRates();
+    // this.getLatestPrices();
+    // this.getSquares();
+    // this.getSquare("X7");
   }
 
   getLanguages() {
@@ -58,6 +59,6 @@ export class AppComponent implements OnInit {
   }
 
   getSquare(id:string) {
-
+    this.apitest.getSquare("X7").subscribe(data => console.log("Square[X7]", data));
   }
 }

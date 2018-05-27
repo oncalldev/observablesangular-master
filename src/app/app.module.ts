@@ -4,10 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ApitestService } from './apitest.service';
+import { TestfilterComponent } from './testfilter/testfilter.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestfilterComponent
   ],
   imports: [
     BrowserModule,

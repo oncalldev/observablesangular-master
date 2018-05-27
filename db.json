@@ -68,59 +68,59 @@
     },
 	"squares": [
         {
-			"id": "X1",
+			"id": 1,
 			"color": "red"
 		},
 		{
-			"id": "X2",
+			"id": 2,
 			"color": "blue"
         },
         {   
-            "id" : "X3",
+            "id" : 3,
             "color" : "yellow"
         },
         {
-            "id" : "X4",
+            "id" : 4,
             "color" : "blue"
         },
         {
-			"id": "X5",
+			"id": 5,
 			"color": "red"
 		},
 		{
-			"id": "X6",
+			"id": 6,
 			"color": "blue"
         },
         {   
-            "id" : "X7",
+            "id" : 7,
             "color" : "yellow"
         },
         {
-            "id" : "X8",
+            "id" : 8,
             "color" : "blue"
         }, 
         {
-			"id": "X9",
+			"id": 9,
 			"color": "red"
 		},
 		{
-			"id": "X10",
+			"id": 10,
 			"color": "blue"
         },
         {   
-            "id" : "X11",
+            "id" : 11,
             "color" : "yellow"
         },
         {
-            "id" : "X12",
+            "id" : 12,
             "color" : "blue"
         },  
         {   
-            "id" : "X13",
+            "id" : 13,
             "color" : "yellow"
         },
         {
-            "id" : "X14",
+            "id" : 14,
             "color" : "blue"
         }              
 	]    

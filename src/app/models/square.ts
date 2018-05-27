@@ -1,4 +1,4 @@
 export interface Squares {
-    id: string;
+    id: number;
     color: string;
   }
